@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-06T23:39:40 IST" name="Default suite" finished-at="2025-10-06T23:39:42 IST" duration-ms="1792">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@429bffaa]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-10-06T23:39:40 IST" name="Default test" finished-at="2025-10-06T23:39:42 IST" duration-ms="1792">
+      <class name="TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner@429bffaa]" started-at="2025-10-06T23:39:40 IST" name="setUpClass" finished-at="2025-10-06T23:39:42 IST" duration-ms="1608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1b52699c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@429bffaa]" started-at="2025-10-06T23:39:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-06T23:39:42 IST" duration-ms="120" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Karate Test S1"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Demo API Test with Karate"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'url 'https://reqres.in/api/users/2'' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("url {string}")
+public void url(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("method GET")
+public void method_get() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("status {int}")
+public void status(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'url 'https://reqres.in/api/users/2'' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("url {string}")
+public void url(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("method GET")
+public void method_get() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("status {int}")
+public void status(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.url 'https://reqres.in/api/users/2'(file:///C:/JavaAK2024/ArunEclipseWorkSpace2024/KarateTest/src/test/java/Demo.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@429bffaa]" started-at="2025-10-06T23:39:42 IST" name="tearDownClass" finished-at="2025-10-06T23:39:42 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
